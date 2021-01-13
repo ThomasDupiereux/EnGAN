@@ -1,4 +1,4 @@
-from urllib import urlopen
+#from urllib import urlopen
 
 import requests, json
 from tqdm import tqdm
