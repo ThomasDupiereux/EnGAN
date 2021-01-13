@@ -14,7 +14,7 @@ def download_file_from_google_drive(id, destination=None):
         params = {'id': id, 'confirm': token}
         response = session.get(URL, params=params, stream=True)
     tokens = response.headers['Content-Disposition'].split(';')
-    filename_token = filter(lambda w: w.startswith('filename='), tokens)
+    filename_token = list(filter(lambda w: w.startswith('filename='), tokens))
     token = filename_token[0]
     filename = token[token.index('=')+2:-1]
     filepath = destination + '/' + filename

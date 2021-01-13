@@ -17,4 +17,4 @@ file_ids = [
 ]
 
 for file_id in tqdm(file_ids):
-    gdrive.download_file_from_google_drive(file_id, destination='pretrained_weights/azimuth')
+    gdrive.download_file_from_google_drive(file_id, destination='ADLproject/pretrained_weights/azimuth')
