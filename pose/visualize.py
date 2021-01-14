@@ -6,13 +6,13 @@ matplotlib.use('Agg')
 import imageio
 from matplotlib import pyplot as plt
 
-import utils
-from model_componets import *
-from model import loss_x_recon, loss_z_recon, loss_cyclic, loss_gen_adv
+from . import utils
+from .model_componets import *
+from .model import loss_x_recon, loss_z_recon, loss_cyclic, loss_gen_adv
 
-from commons.video_project import VideoProject
+from .commons.video_project import VideoProject
 
-from data_loader import get_data_loader
+from .data_loader import get_data_loader
 
 data_loader = get_data_loader('val')
 

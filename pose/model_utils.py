@@ -1,9 +1,9 @@
 import numpy as np
 import tensorflow as tf
-from hyperparams import Hyperparams as H
-import model as M
+from .hyperparams import Hyperparams as H
+from . import model as M
 
-import utils
+from . import utils
 
 
 def interpolate(v1, v2, n_points):

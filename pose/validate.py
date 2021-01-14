@@ -5,12 +5,12 @@ matplotlib.use('Agg')
 import imageio
 from matplotlib import pyplot as plt
 
-import utils
-from model_componets import *
-from model import loss_x_recon, loss_z_recon, loss_cyclic, loss_gen_adv
+from . import utils
+from .model_componets import *
+from .model import loss_x_recon, loss_z_recon, loss_cyclic, loss_gen_adv
 
-from data_loader import get_data_loader
-from model_utils import PoseModel
+from .data_loader import get_data_loader
+from .model_utils import PoseModel
 
 results_dir = 'results_test'
 
@@ -21,7 +21,7 @@ x = dl.get_train_data_batch(2048, 0)
 z = model.encode(x)
 
 mu = np.mean(z, axis=0)
-cov = np.cov(z, rowvar=True)
+cov = np.cov(z, rowvar=False)
 
 z_gen = np.random.multivariate_normal(mu, cov, 100)
 x_gen = model.decode(z_gen)
