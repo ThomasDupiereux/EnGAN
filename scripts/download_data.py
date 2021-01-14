@@ -2,7 +2,7 @@ import os
 
 from .utils import gdrive
 data_file_id = '1I64s0OHllJRT-eBDp8fqAOhT5HBmf4oC'
-destination_file = 'ADLproject/data'
+destination_file = 'EnGAN/data'
 
 gdrive.download_file_from_google_drive(data_file_id, destination_file)
 
