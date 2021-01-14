@@ -1,15 +1,15 @@
 import os, time, sys, traceback
 
-import utils
+from . import utils
 import numpy as np
 import tensorflow as tf
 
 # import load_batch_data as data_loader
 from .hyperparams import Hyperparams as H
-from data_loader import DataLoader
-from commons import transform_util as tr_util
-from model_componets import *
-import model as M
+from .data_loader import DataLoader
+from .commons import transform_util as tr_util
+from .model_componets import *
+from . import model as M
 
 data_loader = DataLoader()
 

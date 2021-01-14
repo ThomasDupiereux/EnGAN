@@ -1,7 +1,7 @@
 from scipy.io import loadmat
 import os
 
-import skeleton_data as sk_data
+from . import skeleton_data as sk_data
 import numpy as np
 
 vnect_to_prior_perm = [14, 1, 2, 3, 4, 5, 6, 7, 0, 8, 9, 10, 19, 11, 12, 13, 20]
@@ -45,7 +45,7 @@ n_limbs = n_joints
 limb_graph = sk_data.gen_limb_graph(limb_parents)
 limb_order = sk_data.bfs_order(limb_graph, limb_root)
 
-joint_map = {joint_names[i]: i for i in xrange(n_joints)}
+joint_map = {joint_names[i]: i for i in range(n_joints)}
 
 torso_joints = [0, 1, 2, 5, 9, 13]
 

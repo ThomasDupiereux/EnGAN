@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as Canvas
 from mpl_toolkits.mplot3d import Axes3D
 
-import prior_sk_data as psk_data
+from . import prior_sk_data as psk_data
 
 # limb_parents = [1, 15, 1, 2, 3, 1, 5, 6, 14, 8, 9, 14, 11, 12, 14, 14, 1, 4, 7, 10, 13]
 limb_parents = psk_data.limb_parents

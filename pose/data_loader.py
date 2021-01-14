@@ -3,7 +3,7 @@ np.random.seed(42)
 
 from scipy.io import savemat, loadmat
 
-import utils, data_paths
+from . import utils, data_paths
 
 default_data_path = data_paths.train_data_path
 val_path = data_paths.val_data_path

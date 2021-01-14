@@ -1,8 +1,8 @@
 import os
 import numpy as np
 from matplotlib import pyplot as plt
-from commons import transform_util as tr_utils, vis_util
-from commons import skeleton_utils as sk_utils
+from .commons import transform_util as tr_utils, vis_util
+from .commons import skeleton_utils as sk_utils
 
 
 def get_exp_name():

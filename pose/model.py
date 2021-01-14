@@ -3,10 +3,10 @@ from .hyperparams import Hyperparams as H
 import os
 import numpy as np
 import tensorflow as tf
-import utils
-from model_componets import EncoderNet, DecoderNet, DiscriminatorNet, get_parent_relative_joints, get_root_relative_joints
-from model_componets import num_joints, num_zdim, num_params_per_joint, num_params_total, num_z_angles
-import model_componets as comps
+from . import utils
+from .model_componets import EncoderNet, DecoderNet, DiscriminatorNet, get_parent_relative_joints, get_root_relative_joints
+from .model_componets import num_joints, num_zdim, num_params_per_joint, num_params_total, num_z_angles
+from . import model_componets as comps
 
 # batch_size_disc, batch_size_gen, learning_rate = 10, 10, 0.01
 

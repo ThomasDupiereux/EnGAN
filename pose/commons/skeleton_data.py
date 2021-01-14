@@ -36,7 +36,7 @@ n_limbs = len(limb_parents)
 
 def gen_limb_graph(limb_parents):
     n = len(limb_parents)
-    G = [[] for i in xrange(n)]
+    G = [[] for i in range(n)]
     for i in range(n):
         j = limb_parents[i]
         if i != j:

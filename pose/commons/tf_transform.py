@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import tensorflow as tf
 
-from pose.hyperparams import Hyperparams as H
+from ADLproject.pose.hyperparams import Hyperparams as H
 from . import prior_sk_data as sk_data
 
 dtype = H.dtype
